@@ -5,14 +5,14 @@ import {Script, console} from "forge-std/Script.sol";
 import {HealthyFood} from "../src/HealthyFood.sol";
 
 contract HealthyFoodScript is Script {
-    Counter public counter;
+    HealthyFood public healthyFood;
 
     function setUp() public {}
 
     function run() public {
         vm.startBroadcast();
 
-        counter = new Counter();
+        healthyFood = new HealthyFood();
 
         vm.stopBroadcast();
     }
