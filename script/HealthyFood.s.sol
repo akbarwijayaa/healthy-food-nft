@@ -2,9 +2,9 @@
 pragma solidity ^0.8.13;
 
 import {Script, console} from "forge-std/Script.sol";
-import {Counter} from "../src/Counter.sol";
+import {HealthyFood} from "../src/HealthyFood.sol";
 
-contract CounterScript is Script {
+contract HealthyFoodScript is Script {
     Counter public counter;
 
     function setUp() public {}
